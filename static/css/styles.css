@@ -1,0 +1,372 @@
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0vh;
+  z-index: -100;
+  opacity: 0.3;
+}
+
+.bg img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.me{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.logo img{
+  width: 40vw;
+  height: 40vw;
+}
+
+.logoImg img{
+  width: 40vw;
+  height: 40vw;
+}
+
+.intro{
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: darkblue;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  animation-name: intro;
+  animation-delay: 0;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes intro{
+  0%{
+    transform: skew;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.intro h1{
+  color: violet;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  animation-name: introh1;
+  animation-delay: 0;
+  animation-duration: 1.8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes introh1{
+  0%{
+    color: black;
+    font-size: 0px;
+  }
+  25%{
+    color: black;
+    font-size: 30px;
+  }
+  50%{
+    color: yellow;
+    font-size: 60px;
+  }
+  70%{
+    color: red;
+    font-size: 30%;
+  }
+  100%{
+    font-style: italic;
+    transform: rotate(-360deg);
+  }
+}
+
+.intrCont{
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: darkblue;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  animation-name: intrCont;
+  animation-delay: 0;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+.services {
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: darkblue;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  animation-name: intro;
+  animation-delay: 0;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+.services ol{
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  color: black;
+  margin: 10px;
+  animation-name: list;
+  animation-delay: 0;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes list{
+  0%{
+    background-color: bisque;
+    font-size: 1px;
+  }
+  50%{
+    background-color: lightcoral;
+    font-size: 20px;
+    color: darkgreen;
+    border-radius: 100%;
+  }
+  70%{
+    color: red;
+    font-size: 30%;
+  }
+  100%{
+    display: none;
+  }
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.contents{
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: cyan;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+
+.contents button{
+  border: none;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  font-size: 50%;
+  color: blue;
+  font-weight: bold;
+  animation-name: button;
+  animation-delay: none;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+button:hover{
+  width: 100%;
+}
+
+@keyframes button{
+  10%{
+    width: 20vw;
+  }
+  20%{
+    width: 35vw;
+  }
+  30%{
+    width: 50vw;
+  }
+  40%{
+    width: 65vw;
+  }
+  50%{
+    width: 70;
+  }
+  60%{
+    width: 65vw;
+  }
+  70%{
+    width: 50vw;
+  }
+  80%{
+    width: 35vw;
+  }
+  100%{
+    width: 20vw;
+  }
+}
+
+footer{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #555555;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.form{
+  background: white;
+  padding: 20px;
+  width:70vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form label{
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+  padding: 10px;
+}
+
+.form input{
+  height: 25px;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+textarea{
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+button{
+  background: blue;
+  border: none;
+  border-radius: 30px;
+  width: 50%;
+  font-size: 25px;
+  color: white;
+}
+
+.app{
+  animation-name: app;
+  animation-delay: none;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes app{
+  0%{
+    width: 20vw;
+    height: : 0vh;
+  }
+  10%{
+    width: 20vw;
+    height: : 10vh;
+  }
+  20%{
+    width: 20vw;
+    height: 20vh;
+  }
+  30%{
+    width: 20vw;
+    height: 30vh;
+  }
+  40%{
+    width: 20vw;
+    height: 40vh;
+  }
+  50%{
+    width: 20vw;
+    height: 50vh;
+  }
+  60%{
+    width: 20vw;
+    width: 60vw;
+  }
+  70%{
+    width: 20vw;
+    height: 70vh;
+  }
+  80%{
+    width: 20vw;
+    height: 80vh;
+  }
+  90%{
+    width: 20vw;
+    height: 90vh;
+  }
+  100%{
+    width: 20vw;
+    width: 100vh;
+  }
+}
+
+
+.table {
+    border-collapse: collapse;
+    overflow: auto;
+    padding: 10%;
+    width: 80%;
+}
+		.table th{
+     color: red;
+     background-color: palegreen;
+		    border: 3px solid black;
+     font-size: 20px;
+     align-items: center;
+}
+
+.table td{
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.table-content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 6px solid black;
+    width: 100vw;
+}
+
+td a{
+  color: blue;
+}

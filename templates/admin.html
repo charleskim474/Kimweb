@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} About Kimtech {%endblock%}
+{%block content %}
+
+<h1>Applications</h1>
+
+{% if data %}
+
+<table class="table" id="myTable">
+				<tr>
+						<th>Name</th>
+				<th> Phone</th>
+				<th>Email</th>
+				<th>Budget</th>
+				<th>Idea</th>
+				</tr>
+				 {% for d in data %}
+			<tr>
+   <td>{{d.name}}</td>
+			  <td><a href="tel:{{d.tel}}">{{d.tel}}</a></td>
+				  <td><a href="mailto:{{d.email}}">{{d.email}}</a></td>
+				  <td>{{d.budget}}</td>
+				  <td>{{d.idea}}</td>
+				</tr>
+  {%endfor%}
+</table>
+{% else %}
+<p>No Request found</p>
+{%endif%}
+
+{% endblock %}

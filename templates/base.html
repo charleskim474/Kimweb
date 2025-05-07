@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kimtech</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+  
+<div class="bg">
+  <img src="/static/images/logo.png">
+</div>
+
+    {% block content %}
+    {%endblock%}
+  
+<footer>
+  <h1>Contacts</h1>
+  Tel: <a href="tel:+256706749801">0706749801</a> <br />
+  <a href="tel:+256761357092">0761357092</a><br />
+  Email: <a href="mailto: charleskim474@gmail.com">charleskim474@gmail.com</a>
+</footer>
+
+  {% block scripts %}
+  <script src="/static/js/script.js"></script>
+  {% endblock %}
+</body>
+</html>
